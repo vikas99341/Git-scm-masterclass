@@ -1,0 +1,603 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://www.freecodecamp.org/news/how-to-use-branches-in-git/amp/
+Subject: =?utf-8?Q?How=20to=20Use=20Branches=20in=20Git=20=E2=80=93=20the=20Ultima?=
+ =?utf-8?Q?te=20Cheatsheet?=
+Date: Sat, 30 Jan 2021 06:25:13 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--TFlVF6hfrAwO18zz39ursQXZAknmxLoYGTPMavi3OY----"
+
+
+------MultipartBoundary--TFlVF6hfrAwO18zz39ursQXZAknmxLoYGTPMavi3OY----
+Content-Type: text/html
+Content-ID: <frame-D5ACC5CC79C04ABD0F81E56F5506CC25@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://www.freecodecamp.org/news/how-to-use-branches-in-git/amp/
+
+<!DOCTYPE html><html ⚡="" amp-version="2101211748002" class="i-amphtml-singledoc i-amphtml-standalone"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-0b87de20-a51f-4f52-8d8c-87e7e7aeff25@mhtml.blink" /><link rel="stylesheet" type="text/css" href="cid:css-dd163d66-9bfd-43f8-8ea3-e455adf203c9@mhtml.blink" /><link rel="stylesheet" type="text/css" href="cid:css-af5668ae-d6c0-4a53-b8c5-c32c70a17e2a@mhtml.blink" />
+    
+
+    <title>How to Use Branches in Git – the Ultimate Cheatsheet</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <link rel="icon" href="https://www.freecodecamp.org/news/favicon.png" type="image/png">
+    <link rel="canonical" href="https://www.freecodecamp.org/news/how-to-use-branches-in-git/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="freeCodeCamp.org">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to Use Branches in Git – the Ultimate Cheatsheet">
+    <meta property="og:description" content="Branches are one of the core concepts in Git. And there's an endless amount of things you can do with them. You can create and delete them, rename and publish them, switch and compare them... and so much more. My intention with this post is to create a comprehensive overview">
+    <meta property="og:url" content="https://www.freecodecamp.org/news/how-to-use-branches-in-git/">
+    <meta property="og:image" content="https://www.freecodecamp.org/news/content/images/2021/01/header-image@2080x1090-1.png">
+    <meta property="article:published_time" content="2021-01-28T16:45:00.000Z">
+    <meta property="article:modified_time" content="2021-01-28T16:48:29.000Z">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="Version Control">
+    <meta property="article:tag" content="Productivity">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/freecodecamp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Use Branches in Git – the Ultimate Cheatsheet">
+    <meta name="twitter:description" content="Branches are one of the core concepts in Git. And there's an endless amount of things you can do with them. You can create and delete them, rename and publish them, switch and compare them... and so much more. My intention with this post is to create a comprehensive overview">
+    <meta name="twitter:url" content="https://www.freecodecamp.org/news/how-to-use-branches-in-git/">
+    <meta name="twitter:image" content="https://www.freecodecamp.org/news/content/images/2021/01/header-image@2080x1090-1.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Tobias Günther">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Git, Version Control, Productivity">
+    <meta name="twitter:site" content="@freecodecamp">
+    <meta name="twitter:creator" content="@gntr">
+    <meta property="og:image:width" content="2080">
+    <meta property="og:image:height" content="1090">
+    
+    
+
+    <meta name="generator" content="Ghost 3.39">
+    <link rel="alternate" type="application/rss+xml" title="freeCodeCamp.org" href="https://www.freecodecamp.org/news/rss/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,700i&amp;display=swap" rel="stylesheet" type="text/css">
+    
+
+    
+    
+
+    
+
+<link rel="preconnect" href="https://www.freecodecamp.org/" referrerpolicy="origin"></head>
+
+<body class="amp-template amp-mode-touch" style="opacity: 1; visibility: visible; animation: 0s ease 0s 1 normal none running none;">
+    <header class="main-header">
+        <nav class="blog-title">
+            <a href="https://www.freecodecamp.org/news" class="logo">
+                <amp-img src="/news/content/images/2019/11/fcc_primary_large_24X210.svg" layout="fixed" height="24px" width="210px" alt="freeCodeCamp.org" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined i-amphtml-built" i-amphtml-layout="fixed" i-amphtml-auto-lightbox-visited="" style="width: 210px; height: 24px;">
+                </amp-img>
+                </a>
+        </nav>
+    </header>
+
+    <main class="content" role="main">
+        <article class="post">
+
+            <header class="post-header">
+                <h1 class="post-title">How to Use Branches in Git – the Ultimate Cheatsheet</h1>
+                <section class="post-meta">
+                    <p class="author">by <a href="https://www.freecodecamp.org/news/author/gntr/">Tobias Günther</a></p>
+                    <time class="post-date" datetime="January 28, 2021">January 28, 2021</time>
+                </section>
+            </header>
+            <figure class="post-image">
+                <amp-img src="https://www.freecodecamp.org/news/content/images/2021/01/header-image@2080x1090-1.png" width="600" height="400" layout="responsive" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built" i-amphtml-layout="responsive" i-amphtml-auto-lightbox-visited=""><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 66.6667%;"></i-amphtml-sizer></amp-img>
+            </figure>
+
+            <section class="post-content">
+                <p>Branches are one of the core concepts in Git. And there's an endless amount of things you can do with them. You can create and delete them, rename and publish them, switch and compare them... and so much more.</p><p>My intention with this post is to create a comprehensive overview of the things you can do with branches in Git. I didn't want to produce a book-length article, so I won't go into detail for all of the actions. But I will provide links if you want to learn more.</p><p>Here's an overview of what we're going to cover:</p><ul><li>How to create branches</li><li>How to rename branches</li><li>How to switch branches</li><li>How to publish branches</li><li>How to track branches</li><li>How to delete branches</li><li>How to merge branches</li><li>How to rebase branches</li><li>How to compare branches</li></ul><h2 id="how-to-create-a-branch-in-git">How to Create a Branch in Git</h2><p>Before you can work with branches, you need to have some in your repository. So let's start by talking about how to create branches:</p><pre><code class="language-Git / CLI">$ git branch &lt;new-branch-name&gt;</code></pre><p>When providing just a name to the <code>git branch</code> command, Git will assume that you want to start your new branch based on your currently checked out revision. If you'd like your new branch to start at a <em>specific</em> revision, you can simply add the revision's SHA-1 hash:</p><pre><code class="language-Git / CLI">$ git branch &lt;new-branch-name&gt; 89a2faad</code></pre><p>It goes without saying that you can only create new branches in your local repository. "Creating" branches in a remote repository happens by publishing an <em>existing local</em> branch - which we'll talk about later.</p><h2 id="how-to-rename-a-branch-in-git">How to Rename a Branch in Git</h2><p>Mistyping a branch's name or simply changing your mind after the fact is all too easy. That's why Git makes it pretty easy to rename a local branch. If you want to rename your current HEAD branch, you can use the following command:</p><pre><code class="language-Git / CLI">$ git branch -m &lt;new-name&gt;</code></pre><p>In case you'd like to rename a different local branch (which is NOT currently checked out), you'll have to provide the old <em>and</em> the new name:</p><pre><code class="language-Git / CLI">$ git branch -m &lt;old-name&gt; &lt;new-name&gt;</code></pre><p>These commands, again, are used to work with local branches. If you'd like to rename a remote branch, things are a little bit more complicated - because Git doesn't allow you to rename remote branches. </p><p>In practice, renaming a remote branch can be done by deleting the old one and then pushing up the new one from your local repository:</p><pre><code class="language-Git / CLI"># First, delete the current / old branch:
+$ git push origin --delete &lt;old-name&gt;
+
+# Then, simply push the new local branch with the correct name:
+$ git push -u origin &lt;new-name&gt;</code></pre><p>If you're using a <a href="https://www.git-tower.com/?utm_source=freecodecamp&amp;utm_medium=guestpost&amp;utm_campaign=working-with-branches-in-git">Git desktop GUI like Tower</a>, you won't be bothered with these details: you can simply rename both local and remote branches from a contextual menu (no need to delete and re-push anything):</p><figure class="kg-card kg-image-card"><amp-anim src="https://www.freecodecamp.org/news/content/images/2021/01/tower_rename-branch.gif" class="kg-image i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built" alt="" width="660" height="500" layout="responsive" i-amphtml-layout="responsive"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 75.7576%;"></i-amphtml-sizer><img decoding="async" alt="" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-anim></figure><h2 id="how-to-switch-branches-in-git">How to Switch Branches in Git</h2><p>The current branch (also referred to as the HEAD branch) defines the context you're working in at the moment. Or in other words: the current HEAD branch is where new commits will be created.</p><p>Having said that, it makes sense that <em>switching</em> the currently active branch is one of the most-used actions any developer performs when working with branches. </p><p>And since switching branches is also referred to as "checking out" branches, you won't be surprised to learn the command that's used to make this happen:</p><pre><code class="language-Git / CLI">$ git checkout &lt;other-branch&gt;</code></pre><p>However, because the <code>git checkout</code> command has so many different duties, the Git community (fairly recently) introduced a new command you can now also use to change the current HEAD branch:</p><pre><code class="language-Git / CLI">$ git switch &lt;other-branch&gt;</code></pre><p>I think it makes a lot of sense to move away from the <code>checkout</code> command – because it's used to perform so many different actions – and instead move towards the new <code>switch</code> command, which is absolutely unambiguous about what it does.</p><h2 id="how-to-publish-a-branch-in-git">How to Publish a Branch in Git</h2><p>As I already said in the section about "creating branches" above, it's not possible to <em>create</em> a new branch on a remote repository. </p><p>What we can do, however, is <em>publish an existing local branch</em> on a remote repository. We can "upload" what we have locally to the remote and thereby share it with our team:</p><pre><code class="language-Git / CLI">$ git push -u origin &lt;local-branch&gt;</code></pre><p>The command, overall, is probably not a big surprise for you. But one parameter, the <code>-u</code> flag, is worth explaining – which I'll do in the next section. </p><p>But to give you the short version here: it tells Git to establish a "tracking connection" which will make pushing and pulling much easier in the future.</p><h2 id="how-to-track-branches-in-git">How to Track Branches in Git</h2><p>By default, local and remote branches have nothing to do with each other. They are stored and managed as independent objects in Git. </p><p>But in real life, of course, local and remote branches often <em>do</em> have a relationship with each other. For example, a remote branch is often something like the "counterpart" of a local one. </p><p>Such a relationship can be modeled in Git: one branch (typically a local one) can "track" another one (typically remote).</p><figure class="kg-card kg-image-card kg-width-wide"><amp-anim src="https://www.freecodecamp.org/news/content/images/2021/01/tracking-ahead-behind.gif" class="kg-image i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built" alt="" width="1240" height="694" layout="responsive" i-amphtml-layout="responsive"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 55.9677%;"></i-amphtml-sizer><img decoding="async" alt="" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-anim></figure><p>Once such a tracking relationship has been established, a couple of things will become a lot easier: most notably, when pushing or pulling, you can simply use the vanilla commands without any further parameters (for example, a simple <code>git push</code>). </p><p>The tracking connection helps Git fill in the blanks – which branch on which remote you want to push to, for example.</p><p>You have already read about one way to establish such a tracking connection: using <code>git push</code> with the <code>-u</code> option when publishing a local branch for the first time does exactly that. After that, you can simply use <code>git push</code> without mentioning the remote or the target branch.</p><p>This also works the other way around: when creating a local branch that should be based on a remote one. In other words, when you want to <em>track</em> a remote branch:</p><pre><code class="language-Git / CLI">$ git branch --track &lt;new-branch&gt; origin/&lt;base-branch&gt;</code></pre><p>Alternatively, you could also use the <code>git checkout</code> command to achieve this. If you want to name the local branch after the remote one, you only have to specify the remote branch's name:</p><pre><code class="language-Git / CLI">$ git checkout --track origin/&lt;base-branch&gt;</code></pre><p>If you want to learn more about this topic, check out this <a href="https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch/?utm_source=freecodecamp&amp;utm_medium=guestpost&amp;utm_campaign=working-with-branches-in-git">post about "Tracking Relationships in Git"</a>.</p><h2 id="how-to-delete-a-branch-in-git">How to Delete a Branch in Git</h2><p>Not all branches are meant to live forever. In fact, most branches in any repository will be short-lived. So if you find yourself wanting to do a little housecleaning, here's how to delete a local branch:</p><pre><code class="language-Git / CLI">$ git branch -d &lt;branch-name&gt;</code></pre><p>Note that you might also need the <code>-f</code> option in case you're trying to delete a branch that contains un-merged changes. Use this option with care because it makes losing data very easy!</p><p>To delete a remote branch, we cannot use the <code>git branch</code> command. Instead, <code>git push</code> will do the trick, using the <code>--delete</code> flag:</p><pre><code class="language-Git / CLI">$ git push origin --delete &lt;branch-name&gt;</code></pre><p>When deleting a branch, keep in mind that you need to check if you should delete its counterpart branch, too. </p><p>For example, if you have just deleted a remote feature branch, it might make sense to also delete its local tracking branch. That way, you make sure you aren't left with lots of obsolete branches – and a messy Git repository.</p><h2 id="how-to-merge-branches-in-git">How to Merge Branches in Git</h2><p>Merging is probably the most popular way to integrate changes. It allows you to bring all of the new commits from another branch into your current HEAD branch.</p><p>One of the great things about Git is that merging branches is so simple and stress-free. It requires just two steps:</p><pre><code class="language-Git / CLI"># (1) Check out the branch that should receive the changes
+$ git switch main
+	
+# (2) Execute the "merge" command with the name of the branch that contains the desired changes
+$ git merge feature/contact-form</code></pre><p>Often, the result of a merge will be a separate new commit, the so-called "merge commit". This is where Git combines the incoming changes. You can think of it like a knot that connects two branches.</p><figure class="kg-card kg-image-card"><amp-img src="https://www.freecodecamp.org/news/content/images/2021/01/merge-commit.png" class="kg-image i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built" alt="" srcset="https://www.freecodecamp.org/news/content/images/size/w600/2021/01/merge-commit.png 600w, https://www.freecodecamp.org/news/content/images/size/w1000/2021/01/merge-commit.png 1000w, https://www.freecodecamp.org/news/content/images/2021/01/merge-commit.png 1380w" width="1380" height="404" layout="responsive" i-amphtml-layout="responsive" i-amphtml-auto-lightbox-visited=""><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 29.2754%;"></i-amphtml-sizer></amp-img></figure><p>There is, of course, a lot more to say about <code>git merge</code>. Here are some free resources that help you learn more:</p><ul><li><a href="https://www.git-tower.com/learn/git/faq/undo-git-merge/?utm_source=freecodecamp&amp;utm_medium=guestpost&amp;utm_campaign=working-with-branches-in-git">How to Undo a Merge in Git</a></li><li><a href="https://www.git-tower.com/learn/git/faq/solve-merge-conflicts/?utm_source=freecodecamp&amp;utm_medium=guestpost&amp;utm_campaign=working-with-branches-in-git">How to Fix and Solve Merge Conflicts</a></li><li><a href="https://www.git-tower.com/learn/git/commands/git-merge/?utm_source=freecodecamp&amp;utm_medium=guestpost&amp;utm_campaign=working-with-branches-in-git">An Overview of "git merge"</a></li></ul><h2 id="how-to-rebase-branches-in-git">How to Rebase Branches in Git</h2><p>An alternative way to integrate commits from another branch is using <code>rebase</code>. And I'm very careful to call it an "alternative" way: it's not better or worse, but simply different. </p><p>If and when you use rebase mainly comes down to personal preference and the conventions in your team. Some teams love rebase, some prefer merge.</p><p>To illustrate the differences between merge and rebase, take a look at the following illustrations. Using <code>git merge</code>, the result of our integration of <em>branch-B</em> into <em>branch-A</em> would look like this:</p><figure class="kg-card kg-image-card kg-width-wide"><amp-anim src="https://www.freecodecamp.org/news/content/images/2021/01/end-situation-merge-commit.gif" class="kg-image i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built" alt="" width="1380" height="434" layout="responsive" i-amphtml-layout="responsive"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 31.4493%;"></i-amphtml-sizer><img decoding="async" alt="" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-anim></figure><p>Using <code>git rebase</code>, on the other hand, the end result will look quite different – especially because no separate merge commit will be created. Using rebase, it appears as if your development history happened in a straight line:</p><figure class="kg-card kg-image-card kg-width-wide"><amp-anim src="https://www.freecodecamp.org/news/content/images/2021/01/end-situation-rebase.gif" class="kg-image i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built" alt="" width="1380" height="321" layout="responsive" i-amphtml-layout="responsive"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 23.2609%;"></i-amphtml-sizer><img decoding="async" alt="" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-anim></figure><p>Starting the actual process is pretty simple:</p><pre><code class="language-Git / CLI"># (1) Check out the branch that should receive the changes
+$ git switch feature/contact-form
+	
+# (2) Execute the "rebase" command with the name of the branch that contains the desired changes
+$ git rebase main
+</code></pre><p>For a deeper understanding of rebase, I recommend the post <a href="https://www.git-tower.com/learn/git/faq/rebase/?utm_source=freecodecamp&amp;utm_medium=guestpost&amp;utm_campaign=working-with-branches-in-git">"Using git rebase instead of git merge"</a>.</p><h2 id="how-to-compare-branches-in-git">How to Compare Branches in Git</h2><p>In certain situations, it can be very helpful to compare two branches. For example, before you decide to integrate or delete a branch, it's interesting to see how it differs from another branch. Does it contain any new commits? And if so: are they valuable?</p><p>To see which commits are in branch-B but not in branch-A, you can use the <code>git log</code> command with the double dot syntax:</p><pre><code class="language-Git / CLI">$ git log branch-A..branch-B</code></pre><p>Of course, you could also use this to compare your local and remote states by writing something like <code>git log main..origin/main</code>.</p><p>If instead of the <em>commits</em> you'd prefer to see the <em>actual changes</em> that make up those differences, you can use the <code>git diff</code> command:</p><pre><code class="language-Git / CLI">$ git diff branch-A..branch-B</code></pre><h2 id="how-to-become-more-productive-with-git">How to Become More Productive with Git</h2><p>Working with branches in Git has many facets! But this is true for Git in general: there's a ton of powerful features that many developers don't know or can't use productively. </p><p>From Interactive Rebase to Submodules and from the Reflog to File History: it pays to learn these advanced features – by becoming more productive and making fewer mistakes.</p><p>One particularly helpful topic is learning how to <strong>undo mistakes with Git</strong>. If you want to dive deeper into how you can save your neck from the inevitable mistakes, check out <a href="https://www.freecodecamp.org/news/how-to-undo-mistakes-with-git/">this video about undoing mistakes in Git</a>.</p><p>Have fun becoming a better programmer!</p><h2 id="about-the-author">About the Author</h2><p><a href="https://twitter.com/gntr">Tobias Günther</a> is the Co-founder of <a href="https://www.git-tower.com/?utm_source=freecodecamp&amp;utm_medium=guestpost&amp;utm_campaign=working-with-branches-in-git">Tower</a>, the popular Git desktop client that helps more than 100,000 developers around the world to be more productive with Git.</p>
+            </section>
+
+        </article>
+    </main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://www.freecodecamp.org/news">freeCodeCamp.org</a> © 2021</section>
+    </footer>
+
+
+</body></html>
+------MultipartBoundary--TFlVF6hfrAwO18zz39ursQXZAknmxLoYGTPMavi3OY----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-0b87de20-a51f-4f52-8d8c-87e7e7aeff25@mhtml.blink
+
+@charset "utf-8";
+
+html { overflow-x: hidden !important; }
+
+html.i-amphtml-fie { height: 100% !important; width: 100% !important; }
+
+html:not([amp4ads]), html:not([amp4ads]) body { height: auto !important; }
+
+html:not([amp4ads]) body { margin: 0px !important; }
+
+body { text-size-adjust: 100%; }
+
+html.i-amphtml-singledoc.i-amphtml-embedded { touch-action: pan-y pinch-zoom; }
+
+html.i-amphtml-fie > body, html.i-amphtml-singledoc > body { overflow: visible !important; }
+
+html.i-amphtml-fie:not(.i-amphtml-inabox) > body, html.i-amphtml-singledoc:not(.i-amphtml-inabox) > body { position: relative !important; }
+
+html.i-amphtml-webview > body { overflow: hidden visible !important; min-height: 100vh !important; }
+
+html.i-amphtml-ios-embed-legacy > body { overflow: hidden auto !important; position: absolute !important; }
+
+html.i-amphtml-ios-embed { position: static; overflow-y: auto !important; }
+
+#i-amphtml-wrapper { overflow: hidden auto !important; position: absolute !important; inset: 0px !important; margin: 0px !important; display: block !important; }
+
+html.i-amphtml-ios-embed.i-amphtml-ios-overscroll, html.i-amphtml-ios-embed.i-amphtml-ios-overscroll > #i-amphtml-wrapper { }
+
+#i-amphtml-wrapper > body { position: relative !important; border-top: 1px solid transparent !important; }
+
+#i-amphtml-wrapper + body { visibility: visible; }
+
+#i-amphtml-wrapper + body .i-amphtml-lightbox-element, #i-amphtml-wrapper + body[i-amphtml-lightbox] { visibility: hidden; }
+
+#i-amphtml-wrapper + body[i-amphtml-lightbox] .i-amphtml-lightbox-element { visibility: visible; }
+
+#i-amphtml-wrapper.i-amphtml-scroll-disabled, .i-amphtml-scroll-disabled { overflow: hidden !important; }
+
+amp-instagram { background-color: rgb(255, 255, 255); padding: 54px 0px 0px !important; }
+
+amp-iframe iframe { box-sizing: border-box !important; }
+
+[amp-access][amp-access-hide] { display: none; }
+
+[subscriptions-dialog], body:not(.i-amphtml-subs-ready) [subscriptions-action], body:not(.i-amphtml-subs-ready) [subscriptions-section] { display: none !important; }
+
+amp-experiment, amp-live-list > [update] { display: none; }
+
+.i-amphtml-jank-meter { position: fixed; background-color: rgba(232, 72, 95, 0.5); bottom: 0px; right: 0px; color: rgb(255, 255, 255); font-size: 16px; z-index: 1000; padding: 5px; }
+
+amp-list[resizable-children] > .i-amphtml-loading-container.amp-hidden { display: none !important; }
+
+amp-list [fetch-error], amp-list[load-more] [load-more-button], amp-list[load-more] [load-more-end], amp-list[load-more] [load-more-failed], amp-list[load-more] [load-more-loading] { display: none; }
+
+amp-list[diffable] div[role="list"] { display: block; }
+
+amp-story-page, amp-story[standalone] { min-height: 1px !important; display: block !important; height: 100% !important; margin: 0px !important; padding: 0px !important; overflow: hidden !important; width: 100% !important; }
+
+amp-story[standalone] { background-color: rgb(32, 33, 37) !important; position: relative !important; }
+
+amp-story-page { background-color: rgb(117, 117, 117); }
+
+amp-story .amp-active > div, amp-story .i-amphtml-loader-background { display: none !important; }
+
+amp-story-page:not(:first-of-type):not([distance]):not([active]) { transform: translateY(1000vh) !important; }
+
+amp-autocomplete { position: relative !important; display: inline-block !important; }
+
+amp-autocomplete > input, amp-autocomplete > textarea { padding: 0.5rem; border: 1px solid rgba(0, 0, 0, 0.33); }
+
+.i-amphtml-autocomplete-results, amp-autocomplete > input, amp-autocomplete > textarea { font-size: 1rem; line-height: 1.5rem; }
+
+[amp-fx^="fly-in"] { visibility: hidden; }
+
+amp-script[nodom] { visibility: hidden; position: fixed !important; top: 0px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+
+[hidden] { display: none !important; }
+
+.i-amphtml-element { display: inline-block; }
+
+.i-amphtml-blurry-placeholder { pointer-events: none; transition: opacity 0.3s cubic-bezier(0, 0, 0.2, 1) 0s !important; }
+
+[layout="nodisplay"]:not(.i-amphtml-element) { display: none !important; }
+
+.i-amphtml-layout-fixed, [layout="fixed"][width][height]:not(.i-amphtml-layout-fixed) { display: inline-block; position: relative; }
+
+.i-amphtml-layout-responsive, [layout="responsive"][width][height]:not(.i-amphtml-layout-responsive), [width][height][heights]:not([layout]):not(.i-amphtml-layout-responsive), [width][height][sizes]:not([layout]):not(.i-amphtml-layout-responsive) { display: block; position: relative; }
+
+.i-amphtml-layout-intrinsic, [layout="intrinsic"][width][height]:not(.i-amphtml-layout-intrinsic) { display: inline-block; position: relative; max-width: 100%; }
+
+.i-amphtml-layout-intrinsic .i-amphtml-sizer { max-width: 100%; }
+
+.i-amphtml-intrinsic-sizer { max-width: 100%; display: block !important; }
+
+.i-amphtml-layout-container, .i-amphtml-layout-fixed-height, [layout="container"], [layout="fixed-height"][height]:not(.i-amphtml-layout-fixed-height) { display: block; position: relative; }
+
+.i-amphtml-layout-fill, .i-amphtml-layout-fill.i-amphtml-notbuilt, [layout="fill"]:not(.i-amphtml-layout-fill) { display: block; position: absolute; inset: 0px; overflow: hidden !important; }
+
+.i-amphtml-layout-flex-item, [layout="flex-item"]:not(.i-amphtml-layout-flex-item) { display: block; position: relative; flex: 1 1 auto; }
+
+.i-amphtml-layout-fluid { position: relative; }
+
+.i-amphtml-layout-size-defined { overflow: hidden !important; }
+
+.i-amphtml-layout-awaiting-size { position: absolute !important; top: auto !important; bottom: auto !important; }
+
+i-amphtml-sizer { display: block !important; }
+
+@supports (aspect-ratio:1/1) {
+  i-amphtml-sizer.i-amphtml-disable-for-ar { display: none !important; }
+}
+
+.i-amphtml-blurry-placeholder, .i-amphtml-fill-content { display: block; height: 0px; max-height: 100%; max-width: 100%; min-height: 100%; min-width: 100%; width: 0px; margin: auto; }
+
+.i-amphtml-layout-size-defined .i-amphtml-fill-content { position: absolute; inset: 0px; }
+
+.i-amphtml-replaced-content, .i-amphtml-screen-reader { padding: 0px !important; border: none !important; }
+
+.i-amphtml-screen-reader { position: fixed !important; top: 0px !important; left: 0px !important; width: 4px !important; height: 4px !important; opacity: 0 !important; overflow: hidden !important; margin: 0px !important; display: block !important; visibility: visible !important; }
+
+.i-amphtml-screen-reader ~ .i-amphtml-screen-reader { left: 8px !important; }
+
+.i-amphtml-screen-reader ~ .i-amphtml-screen-reader ~ .i-amphtml-screen-reader { left: 12px !important; }
+
+.i-amphtml-screen-reader ~ .i-amphtml-screen-reader ~ .i-amphtml-screen-reader ~ .i-amphtml-screen-reader { left: 16px !important; }
+
+.i-amphtml-unresolved { position: relative; overflow: hidden !important; }
+
+.i-amphtml-select-disabled { user-select: none !important; }
+
+.i-amphtml-notbuilt, [layout]:not(.i-amphtml-element), [width][height][heights]:not([layout]):not(.i-amphtml-element), [width][height][sizes]:not([layout]):not(.i-amphtml-element) { position: relative; overflow: hidden !important; color: transparent !important; }
+
+.i-amphtml-notbuilt:not(.i-amphtml-layout-container) > *, [layout]:not([layout="container"]):not(.i-amphtml-element) > *, [width][height][heights]:not([layout]):not(.i-amphtml-element) > *, [width][height][sizes]:not([layout]):not(.i-amphtml-element) > * { display: none; }
+
+amp-img:not(.i-amphtml-element)[i-amphtml-ssr] > img.i-amphtml-fill-content { display: block; }
+
+.i-amphtml-notbuilt:not(.i-amphtml-layout-container), [layout]:not([layout="container"]):not(.i-amphtml-element), [width][height][heights]:not([layout]):not(.i-amphtml-element), [width][height][sizes]:not([layout]):not(.i-amphtml-element) { color: transparent !important; line-height: 0 !important; }
+
+.i-amphtml-ghost { visibility: hidden !important; }
+
+.i-amphtml-element > [placeholder], [layout]:not(.i-amphtml-element) > [placeholder], [width][height][heights]:not([layout]):not(.i-amphtml-element) > [placeholder], [width][height][sizes]:not([layout]):not(.i-amphtml-element) > [placeholder] { display: block; }
+
+.i-amphtml-element > [placeholder].amp-hidden, .i-amphtml-element > [placeholder].hidden { visibility: hidden; }
+
+.i-amphtml-element:not(.amp-notsupported) > [fallback], .i-amphtml-layout-container > [placeholder].amp-hidden, .i-amphtml-layout-container > [placeholder].hidden { display: none; }
+
+.i-amphtml-layout-size-defined > [fallback], .i-amphtml-layout-size-defined > [placeholder] { z-index: 1; position: absolute !important; inset: 0px !important; }
+
+.i-amphtml-notbuilt > [placeholder] { display: block !important; }
+
+.i-amphtml-hidden-by-media-query { display: none !important; }
+
+.i-amphtml-element-error { background: red !important; color: rgb(255, 255, 255) !important; position: relative !important; }
+
+.i-amphtml-element-error::before { content: attr(error-message); }
+
+i-amp-scroll-container, i-amphtml-scroll-container { position: absolute; inset: 0px; display: block; }
+
+i-amp-scroll-container.amp-active, i-amphtml-scroll-container.amp-active { overflow: auto; }
+
+.i-amphtml-loading-container { pointer-events: none; z-index: 1; display: block !important; }
+
+.i-amphtml-notbuilt > .i-amphtml-loading-container { display: block !important; }
+
+.i-amphtml-loading-container.amp-hidden { visibility: hidden; }
+
+.i-amphtml-element > [overflow] { cursor: pointer; position: relative; z-index: 2; visibility: hidden; display: initial; line-height: normal; }
+
+.i-amphtml-element > [overflow].amp-visible { visibility: visible; }
+
+template { display: none !important; }
+
+.amp-border-box, .amp-border-box *, .amp-border-box ::after, .amp-border-box ::before { box-sizing: border-box; }
+
+amp-pixel { display: none !important; }
+
+amp-analytics, amp-auto-ads, amp-story-auto-ads { visibility: hidden; position: fixed !important; top: 0px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+
+html.i-amphtml-fie > amp-analytics { position: initial !important; }
+
+[visible-when-invalid]:not(.visible), form [submit-error], form [submit-success], form [submitting] { display: none; }
+
+amp-accordion { display: block !important; }
+
+amp-accordion > section { float: none !important; }
+
+amp-accordion > section > * { float: none !important; display: block !important; overflow: hidden !important; position: relative !important; }
+
+amp-accordion, amp-accordion > section { margin: 0px; }
+
+amp-accordion:not(.i-amphtml-built) > section > :last-child { display: none !important; }
+
+amp-accordion:not(.i-amphtml-built) > section[expanded] > :last-child { display: block !important; }
+------MultipartBoundary--TFlVF6hfrAwO18zz39ursQXZAknmxLoYGTPMavi3OY----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-dd163d66-9bfd-43f8-8ea3-e455adf203c9@mhtml.blink
+
+@charset "utf-8";
+
+html { font-family: sans-serif; text-size-adjust: 100%; }
+
+body { margin: 0px; }
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary { display: block; }
+
+audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
+
+audio:not([controls]) { display: none; height: 0px; }
+
+[hidden], template { display: none; }
+
+a { background-color: transparent; }
+
+a:active, a:hover { outline: 0px; }
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+h1 { margin: 0.67em 0px; font-size: 2em; }
+
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+
+small { font-size: 80%; }
+
+sub, sup { position: relative; vertical-align: baseline; font-size: 75%; line-height: 0; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+img { border: 0px; }
+
+amp-img { border: 0px; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 1em 40px; }
+
+hr { box-sizing: content-box; height: 0px; }
+
+pre { overflow: auto; }
+
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
+
+button, input, optgroup, select, textarea { margin: 0px; color: inherit; font: inherit; }
+
+button { overflow: visible; }
+
+button, select { text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; appearance: button; }
+
+button[disabled], html input[disabled] { cursor: default; }
+
+input { line-height: normal; }
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0px; }
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+
+input[type="search"] { appearance: textfield; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { appearance: none; }
+
+fieldset { margin: 0px 2px; padding: 0.35em 0.625em 0.75em; border: 1px solid rgb(192, 192, 192); }
+
+legend { padding: 0px; border: 0px; }
+
+textarea { overflow: auto; }
+
+optgroup { font-weight: bold; }
+
+table { border-spacing: 0px; border-collapse: collapse; }
+
+td, th { padding: 0px; }
+
+html { max-height: 100%; height: 100%; font-size: 62.5%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+body { max-height: 100%; height: 100%; color: rgb(42, 42, 64); background: rgb(238, 238, 240); letter-spacing: 0.01rem; font-family: Lato, serif; font-size: 1.8rem; line-height: 1.75em; text-rendering: geometricprecision; font-feature-settings: "kern"; }
+
+::selection { background: rgb(214, 237, 255); }
+
+h1, h2, h3, h4, h5, h6 { margin: 0px 0px 0.3em; color: rgb(10, 10, 35); font-family: Lato, sans-serif; line-height: 1.15em; text-rendering: geometricprecision; font-feature-settings: "dlig", "liga", "lnum", "kern"; }
+
+h1 { text-indent: -2px; letter-spacing: -1px; font-size: 2.6rem; }
+
+h2 { letter-spacing: 0px; font-size: 2.4rem; }
+
+h3 { letter-spacing: -0.6px; font-size: 2.1rem; }
+
+h4 { font-size: 1.9rem; }
+
+h5 { font-size: 1.8rem; }
+
+h6 { font-size: 1.8rem; }
+
+a { color: rgb(0, 46, 173); }
+
+a:hover { color: rgb(17, 17, 17); }
+
+p, ul, ol, dl { margin: 0px 0px 2.5rem; text-rendering: geometricprecision; font-feature-settings: "liga", "onum", "kern"; }
+
+ol, ul { padding-left: 2em; }
+
+ol ol, ul ul, ul ol, ol ul { margin: 0px 0px 0.4em; padding-left: 2em; }
+
+dl dt { float: left; clear: left; overflow: hidden; margin-bottom: 1em; width: 180px; text-align: right; text-overflow: ellipsis; white-space: nowrap; font-weight: 700; }
+
+dl dd { margin-bottom: 1em; margin-left: 200px; }
+
+li { margin: 0.4em 0px; }
+
+li li { margin: 0px; }
+
+hr { display: block; margin: 1.75em 0px; padding: 0px; height: 1px; border-width: 1px 0px 0px; border-right-style: initial; border-bottom-style: initial; border-left-style: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image: initial; border-top-style: solid; border-top-color: rgb(239, 239, 239); }
+
+blockquote { box-sizing: border-box; margin: 1.75em 0px; padding: 0px 0px 0px 1.75em; border-left: 0.4em solid rgb(0, 46, 173); }
+
+blockquote p { margin: 0.8em 0px; font-style: italic; }
+
+blockquote small { display: inline-block; margin: 0.8em 0px 0.8em 1.5em; color: rgb(204, 204, 204); font-size: 0.9em; }
+
+blockquote small::before { content: "— "; }
+
+blockquote cite { font-weight: 700; }
+
+blockquote cite a { font-weight: normal; }
+
+mark { background-color: rgb(253, 255, 182); }
+
+code, tt { padding: 1px 3px; background: rgb(238, 238, 240); white-space: pre-wrap; font-family: Inconsolata, monospace, sans-serif; font-size: 0.85em; font-feature-settings: "liga" 0; }
+
+pre { overflow: auto; box-sizing: border-box; margin: 0px 0px 1.75em; padding: 10px; width: 100%; border: 1px solid rgb(238, 238, 240); background: rgb(238, 238, 240); white-space: pre; font-family: Inconsolata, monospace, sans-serif; font-size: 0.9em; }
+
+pre code, pre tt { padding: 0px; border: none; background: transparent; white-space: pre-wrap; font-size: inherit; }
+
+kbd { display: inline-block; margin-bottom: 0.4em; padding: 1px 8px; border: 1px solid rgb(204, 204, 204); background: rgb(244, 244, 244); box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 1px 0px 0px inset; color: rgb(102, 102, 102); text-shadow: rgb(255, 255, 255) 0px 1px 0px; font-size: 0.9em; font-weight: 700; }
+
+table { box-sizing: border-box; margin: 1.75em 0px; max-width: 100%; width: 100%; background-color: transparent; }
+
+table th, table td { padding: 8px; border-top: 1px solid rgb(239, 239, 239); vertical-align: top; text-align: left; line-height: 20px; }
+
+table th { color: rgb(0, 0, 0); }
+
+table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td { border-top: 0px; }
+
+table tbody + tbody { border-top: 2px solid rgb(239, 239, 239); }
+
+table table table { background-color: rgb(255, 255, 255); }
+
+table tbody > tr:nth-child(2n+1) > td, table tbody > tr:nth-child(2n+1) > th { background-color: rgb(246, 246, 246); }
+
+table.plain tbody > tr:nth-child(2n+1) > td, table.plain tbody > tr:nth-child(2n+1) > th { background: transparent; }
+
+iframe, amp-iframe, .fluid-width-video-wrapper { display: block; margin: 1.75em 0px; }
+
+.fluid-width-video-wrapper iframe, .fluid-width-video-wrapper amp-iframe { margin: 0px; }
+
+textarea, select, input { margin: 0px 0px 5px; padding: 6px 9px; width: 260px; outline: 0px; border: 1px solid rgb(231, 238, 242); background: rgb(255, 255, 255); box-shadow: none; font-family: Lato, sans-serif; font-size: 1.6rem; line-height: 1.4em; font-weight: 100; appearance: none; }
+
+textarea { min-width: 250px; min-height: 80px; max-width: 340px; width: 100%; height: auto; }
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, textarea:focus { outline: none 0px; border: 1px solid rgb(187, 199, 204); background: rgb(255, 255, 255); }
+
+select { width: 270px; height: 30px; line-height: 30px; }
+
+.clearfix::before, .clearfix::after { content: " "; display: table; }
+
+.clearfix::after { clear: both; }
+
+.clearfix { zoom: 1; }
+
+.main-header { position: relative; display: table; overflow: hidden; width: 100%; background: center center / cover no-repeat rgb(10, 10, 35); text-align: left; box-sizing: border-box; height: 38px; }
+
+.content { background: rgb(255, 255, 255); padding-top: 15px; }
+
+.blog-title, .content { margin: auto; max-width: 600px; }
+
+.blog-title { height: 38px; }
+
+.blog-title amp-img { height: 24px; margin-top: 7px; margin-bottom: 7px; }
+
+.blog-title a { display: block; padding-right: 16px; padding-left: 16px; height: 50px; color: rgb(255, 255, 255); text-decoration: none; font-family: Lato, sans-serif; font-size: 16px; line-height: 50px; font-weight: 600; }
+
+.post { position: relative; margin-top: 0px; margin-right: 16px; margin-left: 16px; padding-bottom: 0px; max-width: 100%; border-bottom: 1px solid rgb(235, 242, 246); overflow-wrap: break-word; font-size: 0.95em; line-height: 1.65em; }
+
+.post-header { margin-bottom: 1rem; }
+
+.post-title { margin-bottom: 0px; }
+
+.post-title a { text-decoration: none; }
+
+.post-meta { display: block; margin: 3px 0px 0px; color: rgb(10, 10, 35); font-family: Lato, sans-serif; font-size: 1.3rem; line-height: 2.2rem; }
+
+.post-meta a { color: rgb(10, 10, 35); text-decoration: none; }
+
+.post-meta a:hover { text-decoration: underline; }
+
+.post-meta .author { margin: 0px; font-size: 1.3rem; line-height: 1.3em; }
+
+.post-date { display: inline-block; text-transform: uppercase; white-space: nowrap; }
+
+.post-image { margin: 0px; padding-top: 3rem; padding-bottom: 30px; border-top: 1px solid rgb(232, 232, 232); }
+
+.post-content amp-img, .post-content amp-anim { position: relative; left: 50%; display: block; padding: 0px; min-width: 0px; max-width: 112%; width: calc(100% + 32px); height: auto; transform: translateX(-50%); }
+
+.footnotes { font-size: 1.3rem; line-height: 1.6em; font-style: italic; }
+
+.footnotes li { margin: 0.6rem 0px; }
+
+.footnotes p { margin: 0px; }
+
+.footnotes p a:last-child { text-decoration: none; }
+
+.site-footer { position: relative; margin: 0px auto 20px; padding: 1rem 15px; max-width: 600px; color: rgba(0, 0, 0, 0.5); font-family: Lato, sans-serif; font-size: 1.1rem; line-height: 1.75em; }
+
+.site-footer a { color: rgba(0, 0, 0, 0.5); text-decoration: none; font-weight: bold; }
+
+.site-footer a:hover { border-bottom: 1px solid rgb(187, 199, 204); }
+
+.poweredby { display: block; float: right; width: 45%; text-align: right; }
+
+.copyright { display: block; float: left; width: 45%; }
+
+.medium-migrated-article > p:first-child { text-align: center; }
+
+.medium-migrated-article > figure:first-of-type { display: none; }
+
+.medium-migrated-article > h1 { display: none; }
+------MultipartBoundary--TFlVF6hfrAwO18zz39ursQXZAknmxLoYGTPMavi3OY----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-af5668ae-d6c0-4a53-b8c5-c32c70a17e2a@mhtml.blink
+
+@charset "utf-8";
+
+body { animation: 8s steps(1) 0s 1 normal both running -amp-start; }
+
+@-webkit-keyframes -amp-start { 
+  0% { visibility: hidden; }
+  100% { visibility: visible; }
+}
+
+@keyframes -amp-start { 
+  0% { visibility: hidden; }
+  100% { visibility: visible; }
+}
+------MultipartBoundary--TFlVF6hfrAwO18zz39ursQXZAknmxLoYGTPMavi3OY----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,700i&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: Lato; font-style: italic; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI9w2_FQftx9897sxZ.woff2") format("woff2"); unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Lato; font-style: italic; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI9w2_Gwftx9897g.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Lato; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2") format("woff2"); unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Lato; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Lato; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwaPGQ3q5d0N7w.woff2") format("woff2"); unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Lato; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Lato; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2") format("woff2"); unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Lato; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Lato; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2") format("woff2"); unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Lato; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--TFlVF6hfrAwO18zz39ursQXZAknmxLoYGTPMavi3OY------
